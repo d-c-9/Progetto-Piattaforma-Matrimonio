@@ -1,7 +1,7 @@
 Per il progetto scaricare e installare XAMPP Version 8.2.12  
 al link https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe
 
-Copiare ed incollare la cartella del progetto ("wedding-planner") nella cartella di Xampp -> htdocs C:\xampp\htdocs, avremo così  il progetto in C:\xampp\htdocs\wedding-planner
+Una volta estratta, copiare ed incollare la cartella del progetto ("wedding-planner") nella cartella di Xampp -> htdocs C:\xampp\htdocs, avremo così  il progetto in C:\xampp\htdocs\wedding-planner
 
 Successivamente bisogna far partire Xampp e premere start su Apache e MySQL.
 Premere sul tasto Admin accanto alla sezione MySQL (in alternativa usare direttamente http://localhost/phpmyadmin/) per aprire l'interfaccia del DB. 
