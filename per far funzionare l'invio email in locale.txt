@@ -1,0 +1,30 @@
+per far funzionare l'invio email in locale (localhost) con XAMPP, assicurarsi che il server PHP abbia la funzione mail() abilitata; dunque modifichiamo le impostazioni per utilizzare Mercury (il server SMTP incluso in XAMPP).
+Prima modifichiamo il file php.ini:
+Apri C:\xampp\php\php.ini
+Cerca la sezione [mail function]
+Modifica queste righe:
+[mail function]
+   SMTP=localhost
+   smtp_port=25
+   sendmail_from=noreply@localhost
+
+
+
+
+Dobbiamo configurare Mercury per accettare un dominio locale.
+Ecco i passaggi da seguire:
+Apri il Mercury Mail Server Manager:  "C:\xampp\MercuryMail\mercury.exe"
+
+Vai su "Configuration" -> "Manage Local Users"
+Clicca su "Add User"
+Inserisci:
+Username: noreply
+Personal name:noreply
+Password: test123
+                                                       (Email: noreply@localhost)
+Salva le modifiche e riavvia Mercury
+Verifica che Mercury sia in esecuzione in XAMPP Control Panel
+Per le test email vai su C:\xampp\MercuryMail\MAIL\noreply
+
+Dopo la creazione del token l'invitato può registrarsi attraverso:
+http://localhost/wedding-planner/register_invite.php?token= <ILTUOTOKEN>
